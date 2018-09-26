@@ -1,0 +1,435 @@
+/*reset elements*/
+/* line 40, ../sass/base-styles.scss */
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+/*reset html 5 elements to block*/
+/* line 46, ../sass/base-styles.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, q, section {
+  display: block;
+}
+
+/* line 51, ../sass/base-styles.scss */
+body {
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 60, ../sass/base-styles.scss */
+#home {
+  background: black url(../images/IMG_2040_small.jpg) no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 71, ../sass/base-styles.scss */
+header nav {
+  border-bottom: 2px solid #cfb486;
+  background-color: #000;
+}
+/* line 76, ../sass/base-styles.scss */
+header nav ul {
+  list-style: none;
+  max-width: 980px;
+  margin: 0px auto;
+}
+/* line 82, ../sass/base-styles.scss */
+header nav li {
+  font-weight: bold;
+}
+/* line 85, ../sass/base-styles.scss */
+header nav li a {
+  display: block;
+  color: #fff;
+  padding: 1.25em;
+  text-decoration: none;
+}
+/* line 91, ../sass/base-styles.scss */
+header nav li a:hover {
+  color: #CFB486;
+  background: #fff;
+  -webkit-transition-property: color, background;
+  -moz-transition-property: color, background;
+  -o-transition-property: color, background;
+  transition-property: color, background;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 100, ../sass/base-styles.scss */
+header nav li a.selected {
+  color: #CFB486;
+}
+/* line 105, ../sass/base-styles.scss */
+header nav li#icon {
+  position: relative;
+  cursor: pointer;
+  padding: 1.25em;
+  padding-left: 1.6em;
+}
+/* line 112, ../sass/base-styles.scss */
+header nav li#icon:before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 5px;
+  width: .825em;
+  /* 12px/16px */
+  height: .1875em;
+  /* 2px/16px */
+  border-top: 0.4375em double white;
+  /* 6px/16px */
+  border-bottom: 0.125em solid white;
+  /* 2px / 16px */
+}
+/* line 123, ../sass/base-styles.scss */
+header ul.navlinks {
+  display: none;
+}
+/* line 124, ../sass/base-styles.scss */
+header ul.open {
+  display: block;
+}
+
+/* line 127, ../sass/base-styles.scss */
+#pagewrap {
+  margin: 0px auto;
+}
+/* line 130, ../sass/base-styles.scss */
+#pagewrap hgroup {
+  margin: 1em 0 0 0;
+  width: auto;
+}
+/* line 134, ../sass/base-styles.scss */
+#pagewrap hgroup h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.75em;
+  letter-spacing: 3px;
+  padding-left: 16px;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0, rgba(0, 0, 0, 0.2) 2px 2px 0, rgba(0, 0, 0, 0.2) 3px 3px 0;
+}
+/* line 140, ../sass/base-styles.scss */
+#pagewrap hgroup h1 span {
+  display: block;
+  font-size: 1.5em;
+  font-family: Times New Roman;
+  color: #cfb486;
+  padding-left: 1.8em;
+}
+/* line 150, ../sass/base-styles.scss */
+#pagewrap h2, #pagewrap h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #cfb486;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #cfb486;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+/* line 154, ../sass/base-styles.scss */
+#pagewrap h3 {
+  margin-top: 35px;
+}
+/* line 159, ../sass/base-styles.scss */
+#pagewrap p, #pagewrap q {
+  font-size: .875em;
+  line-height: 1.29em;
+  margin-bottom: 1.29em;
+}
+/* line 163, ../sass/base-styles.scss */
+#pagewrap q {
+  color: #cfb486;
+  font-style: italic;
+}
+/* line 167, ../sass/base-styles.scss */
+#pagewrap q span {
+  font-size: .9em;
+  font-color: #fff;
+}
+/* line 172, ../sass/base-styles.scss */
+#pagewrap img {
+  border: 2px solid #cfb486;
+  /*Fallback for IE 8 and Less */
+  border: 2px solid rgba(207, 180, 134, 0.5);
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+}
+/* line 180, ../sass/base-styles.scss */
+#pagewrap #home-contentcontainer {
+  border: 1px solid #cfb486;
+  border: 1px solid rgba(207, 180, 134, 0.5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(7, 6, 6, 0.7);
+  padding: 1em;
+  width: auto;
+  color: #fff;
+  margin: 5em 0.5em 0.5em 0.5em;
+  overflow: auto;
+}
+/* line 192, ../sass/base-styles.scss */
+#pagewrap #home-contentcontainer a, #pagewrap #home-contentcontainer a:visited {
+  /*display: block;*/
+  text-decoration: none;
+  color: #fff;
+}
+/* line 197, ../sass/base-styles.scss */
+#pagewrap #home-contentcontainer a:hover, #pagewrap #home-contentcontainer a:visited:hover {
+  color: #cfb486;
+  background: #262626;
+  -webkit-transition-property: color, background;
+  -moz-transition-property: color, background;
+  -o-transition-property: color, background;
+  transition-property: color, background;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 206, ../sass/base-styles.scss */
+#pagewrap #home-contentcontainer #home-maincontent {
+  float: none;
+}
+/* line 209, ../sass/base-styles.scss */
+#pagewrap #home-contentcontainer #home-maincontent ul {
+  margin: 0 0 1em 1em;
+}
+/* line 212, ../sass/base-styles.scss */
+#pagewrap #home-contentcontainer #home-maincontent ul li {
+  font-size: .8em;
+  font-line-height: 1em;
+}
+/* line 219, ../sass/base-styles.scss */
+#pagewrap #home-contentcontainer aside {
+  float: none;
+}
+/* line 222, ../sass/base-styles.scss */
+#pagewrap #home-contentcontainer aside ul {
+  list-style: none;
+}
+/* line 224, ../sass/base-styles.scss */
+#pagewrap #home-contentcontainer aside ul li {
+  line-height: 1.5em;
+  font-size: 1em;
+}
+/* line 231, ../sass/base-styles.scss */
+#pagewrap #home-contentcontainer aside section.events {
+  margin-bottom: 30px;
+}
+/* line 234, ../sass/base-styles.scss */
+#pagewrap #home-contentcontainer aside section.events .date {
+  width: 65px;
+  height: 65px;
+  background: #cfb486;
+  color: #3b391f;
+  padding: 10px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  clear: both;
+}
+/* line 245, ../sass/base-styles.scss */
+#pagewrap #home-contentcontainer aside section.events .date p {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+/* line 251, ../sass/base-styles.scss */
+#pagewrap #home-contentcontainer aside section.events .date p span {
+  display: block;
+  font-size: 32px;
+  font-weight: normal;
+  letter-spacing: normal;
+  margin-top: 15px;
+}
+/* line 263, ../sass/base-styles.scss */
+#pagewrap #contentcontainer {
+  width: auto;
+  margin: 1.75em 1em 0.5em 1em;
+}
+/* line 267, ../sass/base-styles.scss */
+#pagewrap #contentcontainer #maincontent {
+  width: auto;
+  /*padding-left: 30px;*/
+}
+/* line 271, ../sass/base-styles.scss */
+#pagewrap #contentcontainer #maincontent h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #cfb486;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #cfb486;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+/* line 275, ../sass/base-styles.scss */
+#pagewrap #contentcontainer #maincontent #questions {
+  clear: both;
+  /*border: 1px solid rgb(207, 180, 134)/*Fallback for IE 8 and Less*/
+  /*border: 1px solid rgba(207, 180, 134, 0.5);*/
+}
+/* line 280, ../sass/base-styles.scss */
+#pagewrap #contentcontainer #maincontent #questions h3 {
+  margin: 0;
+  font-size: 1em;
+}
+/* line 284, ../sass/base-styles.scss */
+#pagewrap #contentcontainer #maincontent #questions h3 a {
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: normal;
+}
+/* line 288, ../sass/base-styles.scss */
+#pagewrap #contentcontainer #maincontent #questions h3.selected {
+  color: #fff;
+  border-bottom: 1px solid white;
+}
+/* line 290, ../sass/base-styles.scss */
+#pagewrap #contentcontainer #maincontent #questions h3, #pagewrap #contentcontainer #maincontent #questions div {
+  padding: 10px;
+  padding-left: 0;
+}
+/* line 296, ../sass/base-styles.scss */
+#pagewrap #contentcontainer #maincontent h4 {
+  margin-bottom: 1em;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+/* line 298, ../sass/base-styles.scss */
+#pagewrap #contentcontainer #maincontent img {
+  margin-bottom: 30px;
+}
+/* line 304, ../sass/base-styles.scss */
+#pagewrap #twocolumn-contentcontainer {
+  width: auto;
+  margin: 1.75em 1em 0.5em 1em;
+}
+/* line 308, ../sass/base-styles.scss */
+#pagewrap #twocolumn-contentcontainer #twocolumn-maincontent {
+  float: none;
+  /*width: 430px;*/
+}
+/* line 312, ../sass/base-styles.scss */
+#pagewrap #twocolumn-contentcontainer #twocolumn-maincontent img.left {
+  float: left;
+  margin: 5px 16px 0 0;
+}
+/* line 317, ../sass/base-styles.scss */
+#pagewrap #twocolumn-contentcontainer #twocolumn-maincontent h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #cfb486;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #cfb486;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+/* line 321, ../sass/base-styles.scss */
+#pagewrap #twocolumn-contentcontainer #twocolumn-maincontent a, #pagewrap #twocolumn-contentcontainer #twocolumn-maincontent a:visited {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+/* line 329, ../sass/base-styles.scss */
+#pagewrap #twocolumn-contentcontainer #imageholder {
+  display: none;
+  /*float: right;
+  width: 435px;
+  
+  img {margin-top: 55px;}*/
+}
+/* line 338, ../sass/base-styles.scss */
+#pagewrap #twocolumn-contentcontainer div.wrap li {
+  margin-bottom: 2em;
+  display: block;
+}
+/* line 342, ../sass/base-styles.scss */
+#pagewrap #twocolumn-contentcontainer div.wrap li label {
+  font-size: 1em;
+  font-weight: bold;
+  color: #cfb486;
+  float: left;
+  text-align: right;
+  margin-bottom: 1em;
+}
+/* line 350, ../sass/base-styles.scss */
+#pagewrap #twocolumn-contentcontainer div.wrap li input[type=text], #pagewrap #twocolumn-contentcontainer div.wrap li textarea {
+  width: 100%;
+  border: 1px solid #cfb486;
+  color: #fff;
+  background: none;
+}
+/* line 357, ../sass/base-styles.scss */
+#pagewrap #twocolumn-contentcontainer div.wrap li input[type=text] {
+  height: 2.5em;
+}
+
+/* line 365, ../sass/base-styles.scss */
+footer {
+  /*padding: 1.875em 0 1.875em 1em;*/
+  clear: both;
+  background-color: #000;
+}
+/* line 370, ../sass/base-styles.scss */
+footer #footercontainer {
+  padding-left: 1em;
+  height: 3.75em;
+  padding-top: 1.25em;
+  max-width: 980px;
+  margin: auto;
+}
+/* line 376, ../sass/base-styles.scss */
+footer #footercontainer p {
+  float: none;
+  font-size: .875em;
+  line-height: 1.29em;
+  margin-bottom: 1.29em;
+}
+/* line 380, ../sass/base-styles.scss */
+footer #footercontainer p a, footer #footercontainer p a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 384, ../sass/base-styles.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 385, ../sass/base-styles.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 386, ../sass/base-styles.scss */
+.clearfix {
+  *zoom: 1;
+}

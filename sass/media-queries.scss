@@ -1,0 +1,161 @@
+
+@media only screen and (min-width: 520px) {
+
+	#menu {display: none;}
+
+	header {
+		nav {
+			li {
+				float: left;
+
+				a {
+					padding: 1em;
+				}
+			}
+		}
+		
+		ul.navlinks {display: block;}
+	}
+
+	#pagewrap {
+
+		hgroup {
+
+			h1 {
+
+				font-size: 2em;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 800px) {
+
+	#pagewrap {
+
+		#home-contentcontainer {
+
+			width: auto;
+			padding: 3em;
+
+			#home-maincontent {
+				float: left;
+				width: 55%;
+			}
+
+			aside {
+				float: right;
+				width: 40%;
+			}
+		}
+	}
+
+	footer {
+		
+		#footercontainer {
+
+			p {
+				float: left;
+				font-size: .75em;
+				padding-right: 1em;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 980px) {
+
+	html {
+		// overflow-y: scroll;
+	}
+
+	body#home {
+		background: black url(../images/IMG_2041.jpg) 50% 40% no-repeat;
+    	background-size: 1100px 825px; 
+	}
+
+	header {
+
+		nav {
+
+			ul {
+
+				width: 61.25em;
+
+				li {
+
+					a {
+
+						padding: 1.25em;
+					}
+				}
+			}
+		}
+	}
+
+	#pagewrap {
+
+		width: 980px;
+
+		hgroup {
+
+			margin-top: 85px;
+
+			h1 {
+
+				font-size: 2.5em;
+				padding-left: 0;
+			}
+		}
+
+		p {
+
+			font-size: .75em;
+		}
+
+		#home-contentcontainer {
+		    margin: auto;
+		    margin-top: 35px;
+		    margin-bottom: 35px;
+
+		    aside {
+
+		    	ul {
+
+		    		li {
+
+		    			font-size: .8em;
+		    		}
+		    	}
+		    }
+		}
+
+		#twocolumn-contentcontainer {
+			width: 100%;
+			// overflow: hidden;
+
+			#twocolumn-maincontent {
+				float: left;
+				width: 50%;
+
+				img.left {
+
+					display: none;
+				}
+			}
+
+			#imageholder {
+
+				display: block;
+				float: right;
+				width: 50%;
+
+				img {
+
+					margin-top: 55px;
+					margin-left: 30px;
+				}
+			}
+		}
+	}
+}

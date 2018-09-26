@@ -1,0 +1,466 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 100%, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.animated {
+  animation-duration: .8s;
+  animation-fill-mode: both;
+}
+
+.box-error {
+  border: 1px solid #cc0000 !important;
+}
+
+.my_error {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background: white;
+  padding-left: 15px;
+  padding-top: 5px;
+  display: none;
+  color: #cc0000;
+}
+.my_error.active {
+  display: block;
+}
+
+.no_error, .loading {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #ffffff;
+  padding: 50px 10px 0 10px;
+  display: none;
+}
+.no_error.active, .loading.active {
+  display: inline;
+}
+.no_error img, .loading img {
+  border: none !important;
+}
+.no_error p, .loading p {
+  color: #4d4d4d !important;
+}
+
+/*reset elements*/
+/* line 40, ../sass/base-styles.scss */
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+/*reset html 5 elements to block*/
+/* line 46, ../sass/base-styles.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, q, section, li, input, textarea, div {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 51, ../sass/base-styles.scss */
+body {
+  font-family: Arial;
+  font-size: 1em;
+  font-weight: normal;
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 60, ../sass/base-styles.scss */
+#home {
+  background: black url(../images/IMG_2040_small.jpg) no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header nav {
+  border-bottom: 2px  solid #cfb486;
+  background-color: #000;
+}
+header nav ul {
+  list-style: none;
+  max-width: 980px;
+  margin: 0 auto;
+}
+header nav li {
+  font-weight: bold;
+}
+header nav li a {
+  display: block;
+  color: #fff;
+  padding: 1.25em;
+  text-decoration: none;
+}
+header nav li a:hover {
+  color: #CFB486;
+  background: #fff;
+  -webkit-transition: color, background;
+  -moz-transition: color, background;
+  -o-transition: color, background;
+  transition: color, background;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+header nav li a.selected {
+  color: #cfb486;
+}
+header nav li a#icon {
+  position: relative;
+  cursor: pointer;
+  padding: 1.25em;
+  padding-left: 1.6em;
+}
+header nav li a#icon:before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 5px;
+  width: .825em;
+  /* 12px/16px */
+  height: .1875em;
+  /* 2px/16px */
+  border-top: 0.4375em double white;
+  /* 6px/16px */
+  border-bottom: 0.125em solid white;
+  /* 2px / 16px */
+}
+header ul.navlinks {
+  display: none;
+}
+header ul.open {
+  display: block;
+}
+
+#pagewrap {
+  margin: 0 auto;
+}
+#pagewrap hgroup {
+  margin: 1em 0 0 0;
+  width: auto;
+}
+#pagewrap hgroup h1 {
+  font-family: Arial;
+  font-size: 1.75em;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 3px;
+  padding-left: 16px;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0, rgba(0, 0, 0, 0.2) 2px 2px 0, rgba(0, 0, 0, 0.2) 3px 3px 0;
+}
+#pagewrap hgroup h1 span {
+  font-family: Times New Roman;
+  font-size: 1.5em;
+  font-weight: 400;
+  display: block;
+  color: #cfb486;
+  padding-left: 1.8em;
+}
+#pagewrap h2, #pagewrap h3 {
+  font-family: Arial;
+  font-size: 1.75em;
+  font-weight: normal;
+  color: #cfb486;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #cfb486;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+#pagewrap h3 {
+  margin-top: 35px;
+}
+#pagewrap p, #pagewrap q {
+  font-size: .875em;
+  line-height: 1.29em;
+  margin-bottom: 1.29em;
+}
+#pagewrap q {
+  color: #cfb486;
+  font-style: italic;
+}
+#pagewrap q span {
+  font-size: .9em;
+  font-color: #fff;
+}
+#pagewrap img {
+  border: 2px solid #cfb486;
+  /*Fallback for IE 8 and Less */
+  border: 2px solid rgba(207, 180, 134, 0.5);
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+}
+#pagewrap #home-contentcontainer {
+  border: 1px solid #cfb486;
+  border: 1px solid rgba(207, 180, 134, 0.5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(7, 6, 6, 0.7);
+  padding: 1em;
+  width: auto;
+  color: #fff;
+  margin: 5em 0.5em 0.5em 0.5em;
+  overflow: auto;
+}
+#pagewrap #home-contentcontainer a, #pagewrap #home-contentcontainer a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+#pagewrap #home-contentcontainer a:hover, #pagewrap #home-contentcontainer a:visited:hover {
+  color: #cfb486;
+  background: #262626;
+  -webkit-transition: color, background;
+  -moz-transition: color, background;
+  -o-transition: color, background;
+  transition: color, background;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+#pagewrap #home-contentcontainer #home-maincontent {
+  float: none;
+}
+#pagewrap #home-contentcontainer #home-maincontent ul {
+  margin: 0 0 1em 1em;
+}
+#pagewrap #home-contentcontainer #home-maincontent ul li {
+  font-size: 0.8em;
+  font-weight: normal;
+  line-height: 1em;
+}
+#pagewrap #home-contentcontainer aside {
+  float: none;
+}
+#pagewrap #home-contentcontainer aside ul {
+  list-style: none;
+}
+#pagewrap #home-contentcontainer aside ul li {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+#pagewrap #home-contentcontainer aside section.events {
+  margin-bottom: 30px;
+}
+#pagewrap #home-contentcontainer aside section.events .date {
+  width: 65px;
+  height: 65px;
+  background: #cfb486;
+  color: #3b391f;
+  padding: 10px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  clear: both;
+}
+#pagewrap #home-contentcontainer aside section.events .date p {
+  font-family: Arial;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+#pagewrap #home-contentcontainer aside section.events .date p span {
+  font-family: Arial;
+  font-size: 32px;
+  font-weight: normal;
+  display: block;
+  letter-spacing: normal;
+  margin-top: 15px;
+}
+#pagewrap #contentcontainer {
+  width: auto;
+  margin: 1.75em 1em 0.5em 1em;
+}
+#pagewrap #contentcontainer #maincontent {
+  width: auto;
+}
+#pagewrap #contentcontainer #maincontent h1 {
+  font-family: Arial;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #cfb486;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #cfb486;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+#pagewrap #contentcontainer #maincontent #questions {
+  clear: both;
+}
+#pagewrap #contentcontainer #maincontent #questions h3 {
+  margin: 0;
+  font-size: 1em;
+}
+#pagewrap #contentcontainer #maincontent #questions h3 a {
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: normal;
+}
+#pagewrap #contentcontainer #maincontent #questions h3.selected {
+  color: #fff;
+  border-bottom: 1px solid white;
+}
+#pagewrap #contentcontainer #maincontent #questions h3, #pagewrap #contentcontainer #maincontent #questions div {
+  padding: 10px;
+  padding-left: 0;
+}
+#pagewrap #contentcontainer #maincontent h4 {
+  font-family: Arial;
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+#pagewrap #contentcontainer #maincontent img {
+  margin-bottom: 30px;
+}
+#pagewrap #twocolumn-contentcontainer {
+  width: auto;
+  padding: 1.75em 1em 0.5em 1em;
+  overflow: hidden;
+}
+#pagewrap #twocolumn-contentcontainer #twocolumn-maincontent {
+  float: none;
+  position: relative;
+}
+#pagewrap #twocolumn-contentcontainer #twocolumn-maincontent img.left {
+  float: left;
+  margin: 5px 16px 0 0;
+}
+#pagewrap #twocolumn-contentcontainer #twocolumn-maincontent h1 {
+  font-family: Arial;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #cfb486;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #cfb486;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+#pagewrap #twocolumn-contentcontainer #twocolumn-maincontent a, #pagewrap #twocolumn-contentcontainer #twocolumn-maincontent a:visited {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+#pagewrap #twocolumn-contentcontainer #imageholder {
+  display: none;
+}
+#pagewrap #twocolumn-contentcontainer div.wrap {
+  position: relative;
+}
+#pagewrap #twocolumn-contentcontainer div.wrap ol {
+  overflow: hidden;
+}
+#pagewrap #twocolumn-contentcontainer div.wrap li {
+  margin-bottom: 3em;
+  display: block;
+  position: relative;
+}
+#pagewrap #twocolumn-contentcontainer div.wrap li input, #pagewrap #twocolumn-contentcontainer div.wrap li textarea {
+  width: 100%;
+  border: 1px solid #cfb486;
+  color: #fff;
+  background: none;
+}
+#pagewrap #twocolumn-contentcontainer div.wrap li input::placeholder, #pagewrap #twocolumn-contentcontainer div.wrap li textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  padding-left: 5px;
+  opacity: 1;
+  /* Firefox */
+}
+#pagewrap #twocolumn-contentcontainer div.wrap li input:-ms-input-placeholder, #pagewrap #twocolumn-contentcontainer div.wrap li textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+  padding-left: 5px;
+}
+#pagewrap #twocolumn-contentcontainer div.wrap li input::-ms-input-placeholder, #pagewrap #twocolumn-contentcontainer div.wrap li textarea::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+  padding-left: 5px;
+}
+#pagewrap #twocolumn-contentcontainer div.wrap li input {
+  height: 2.5em;
+}
+
+/* line 365, ../sass/base-styles.scss */
+footer {
+  /*padding: 1.875em 0 1.875em 1em;*/
+  clear: both;
+  background-color: #000;
+}
+
+/* line 370, ../sass/base-styles.scss */
+footer #footercontainer {
+  padding-left: 1em;
+  height: 3.75em;
+  padding-top: 1.25em;
+  max-width: 980px;
+  margin: auto;
+}
+
+/* line 376, ../sass/base-styles.scss */
+footer #footercontainer p {
+  float: none;
+  font-size: .875em;
+  line-height: 1.29em;
+  margin-bottom: 1.29em;
+}
+
+/* line 380, ../sass/base-styles.scss */
+footer #footercontainer p a, footer #footercontainer p a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 384, ../sass/base-styles.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 385, ../sass/base-styles.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 386, ../sass/base-styles.scss */
+.clearfix {
+  *zoom: 1;
+}

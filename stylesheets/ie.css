@@ -1,0 +1,11 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+#pagewrap #home-contentcontainer {
+		background-color: transparent;
+     	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2070606,endColorstr=#B2070606)"; /* IE8 */    
+      	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2070606,endColorstr=#B2070606);   /* IE6 & 7 */      
+      	zoom: 1;}
+	

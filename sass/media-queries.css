@@ -1,0 +1,93 @@
+@media only screen and (min-width: 520px) {
+  #menu {
+    display: none;
+  }
+
+  header nav li {
+    float: left;
+  }
+  header nav li a {
+    padding: 1em;
+  }
+  header ul.navlinks {
+    display: block;
+  }
+
+  #pagewrap hgroup h1 {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 800px) {
+  #pagewrap #home-contentcontainer {
+    width: auto;
+    padding: 3em;
+  }
+  #pagewrap #home-contentcontainer #home-maincontent {
+    float: left;
+    width: 55%;
+  }
+  #pagewrap #home-contentcontainer aside {
+    float: right;
+    width: 40%;
+  }
+
+  footer #footercontainer p {
+    float: left;
+    font-size: .75em;
+    padding-right: 1em;
+  }
+}
+@media only screen and (min-width: 980px) {
+  body#home {
+    background: black url(../images/IMG_2041.jpg) 50% 40% no-repeat;
+    background-size: 1100px 825px;
+  }
+
+  header nav ul {
+    width: 61.25em;
+  }
+  header nav ul li a {
+    padding: 1.25em;
+  }
+
+  #pagewrap {
+    width: 980px;
+  }
+  #pagewrap hgroup {
+    margin-top: 85px;
+  }
+  #pagewrap hgroup h1 {
+    font-size: 2.5em;
+    padding-left: 0;
+  }
+  #pagewrap p {
+    font-size: .75em;
+  }
+  #pagewrap #home-contentcontainer {
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  #pagewrap #home-contentcontainer aside ul li {
+    font-size: .8em;
+  }
+  #pagewrap #twocolumn-contentcontainer {
+    width: 100%;
+  }
+  #pagewrap #twocolumn-contentcontainer #twocolumn-maincontent {
+    float: left;
+    width: 50%;
+  }
+  #pagewrap #twocolumn-contentcontainer #twocolumn-maincontent img.left {
+    display: none;
+  }
+  #pagewrap #twocolumn-contentcontainer #imageholder {
+    display: block;
+    float: right;
+    width: 50%;
+  }
+  #pagewrap #twocolumn-contentcontainer #imageholder img {
+    margin-top: 55px;
+    margin-left: 30px;
+  }
+}

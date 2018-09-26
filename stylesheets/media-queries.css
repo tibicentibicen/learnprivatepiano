@@ -1,0 +1,137 @@
+@media only screen and (min-width: 520px) {
+  /*body:before { content: "Max-width 520";}*/
+  /* line 7, ../sass/media-queries.scss */
+  #menu {
+    display: none;
+  }
+
+  /* line 17, ../sass/media-queries.scss */
+  header nav li {
+    float: left;
+  }
+  /* line 20, ../sass/media-queries.scss */
+  header nav li a {
+    padding: 1em;
+  }
+  /* line 26, ../sass/media-queries.scss */
+  header ul.navlinks {
+    display: block;
+  }
+
+  /* line 32, ../sass/media-queries.scss */
+  #pagewrap hgroup h1 {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 800px) {
+  /*body:before { content: "Max-width 800";}*/
+  /* line 45, ../sass/media-queries.scss */
+  #pagewrap #home-contentcontainer {
+    width: auto;
+    padding: 3em;
+  }
+  /* line 49, ../sass/media-queries.scss */
+  #pagewrap #home-contentcontainer #home-maincontent {
+    float: left;
+    width: 55%;
+  }
+  /* line 54, ../sass/media-queries.scss */
+  #pagewrap #home-contentcontainer aside {
+    float: right;
+    width: 40%;
+  }
+
+  /* line 64, ../sass/media-queries.scss */
+  footer #footercontainer p {
+    float: left;
+    font-size: .75em;
+    padding-right: 1em;
+  }
+}
+@media only screen and (min-width: 980px) {
+  /* line 74, ../sass/media-queries.scss */
+  html {
+    overflow-y: scroll;
+  }
+
+  /*body:before { content: "Max-width 980";}*/
+  /* line 79, ../sass/media-queries.scss */
+  body#home {
+    background: black url(../images/IMG_2041.jpg) 50% 40% no-repeat;
+    background-size: 1100px 825px;
+  }
+
+  /* line 86, ../sass/media-queries.scss */
+  header nav ul {
+    width: 61.25em;
+  }
+  /* line 90, ../sass/media-queries.scss */
+  header nav ul li a {
+    padding: 1.25em;
+  }
+
+  /* line 96, ../sass/media-queries.scss */
+  #pagewrap {
+    width: 61.25em;
+  }
+  /* line 99, ../sass/media-queries.scss */
+  #pagewrap hgroup {
+    margin-top: 85px;
+  }
+  /* line 102, ../sass/media-queries.scss */
+  #pagewrap hgroup h1 {
+    font-size: 2.5em;
+    padding-left: 0;
+  }
+  /* line 108, ../sass/media-queries.scss */
+  #pagewrap p {
+    font-size: .75em;
+  }
+  /* line 113, ../sass/media-queries.scss */
+  #pagewrap #home-contentcontainer {
+    /*width: 48.125em;*/
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    /*#home-maincontent {
+    	float: left;
+    	width: 56%
+    }*/
+  }
+  /* line 124, ../sass/media-queries.scss */
+  #pagewrap #home-contentcontainer aside {
+    /*float: right;
+    width: 34%;*/
+  }
+  /* line 129, ../sass/media-queries.scss */
+  #pagewrap #home-contentcontainer aside ul li {
+    font-size: .8em;
+  }
+  /* line 136, ../sass/media-queries.scss */
+  #pagewrap #twocolumn-contentcontainer {
+    width: 56.25em;
+    overflow: auto;
+  }
+  /* line 140, ../sass/media-queries.scss */
+  #pagewrap #twocolumn-contentcontainer #twocolumn-maincontent {
+    float: left;
+    width: 50%;
+  }
+  /* line 144, ../sass/media-queries.scss */
+  #pagewrap #twocolumn-contentcontainer #twocolumn-maincontent img.left {
+    display: none;
+  }
+  /* line 149, ../sass/media-queries.scss */
+  #pagewrap #twocolumn-contentcontainer #imageholder {
+    display: block;
+    float: right;
+    width: 435px;
+  }
+  /* line 154, ../sass/media-queries.scss */
+  #pagewrap #twocolumn-contentcontainer #imageholder img {
+    margin-top: 55px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /*body:before { content: "Max-width 1024";}*/
+}
