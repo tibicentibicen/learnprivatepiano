@@ -39,22 +39,6 @@ $(document).ready(function  () {
 			}
 		});
 	
-	//This code block is for the contact form on the contact us page without reloading page. However, it does not display comments asynchronously. Need to add a JSON callback at a later date.
-	// $(function() {
- //        $('form.comfrmstyle').submit(function(event) {
- //                event.preventDefault(); // stop the form submitting
- //               // $('.contactfrm').append(loadImage);//this will simulate processing by loading an animated gif
- //             	var data = $(this).serialize(); // $(this) represents the form object
- //                $.post('./scripts/processcontacts.php', data, function(results) {
- //                     //   $('.contactfrm img.loaderIcon').fadeOut(1000);//fade out processing simulation image
- //                        $('ul#response').html(results);//display succcess or failure errors.
- //  						//clear the form data
-	// 					$('#name').val('');
-	// 					$('#email').val('');
-	// 					$('#comments').val('');
-	// 		});
-	// 	});	
-	// });
     //contact form validation
 
     var errors = false;
