@@ -40,7 +40,7 @@ $(document).ready(function  () {
 		});
 	
     //contact form validation
-
+    
     var errors = false;
 
     $("input:text, textarea").each(function() {
@@ -125,8 +125,8 @@ $(document).ready(function  () {
                 data: data,
 
                 success: function(response){
-                    alert(data);
-                    //loading.removeClass('active');
+                    //alert(data);
+                    loading.removeClass('active');
                     NoErrors.addClass('active');
 
 
