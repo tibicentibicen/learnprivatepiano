@@ -33,16 +33,23 @@ try {
     //Server settings
     $mail->SMTPDebug = 4;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'win-mail19.hostmanagement.net';  // Specify main and backup SMTP servers
+    $mail->Host = 'mail.masscic.org';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'root@learnprivatepiano.com';                 // SMTP username
+    $mail->Username = 'cicada@masscic.org';                 // SMTP username
     $mail->Password = 'Macross123';                           // SMTP password
-    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+//    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+    // $mail->Host = 'win-mail19.hostmanagement.net';  // Specify main and backup SMTP servers
+    // $mail->SMTPAuth = true;                               // Enable SMTP authentication
+    // $mail->Username = 'root@learnprivatepiano.com';                 // SMTP username
+    // $mail->Password = 'Macross123';                           // SMTP password
+    // $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('root@learnprivatepiano.com', 'Gerry');
+    $mail->setFrom('juditernst@comcast.net', 'Judit');
     $mail->addAddress('mechaworx@yahoo.com', 'Gerry');     // Add a recipient
+    $mail->addAddress('juditernst@comcast.net', 'Judit Ernst');     // Add a recipient
+
 
     $body = '
 
